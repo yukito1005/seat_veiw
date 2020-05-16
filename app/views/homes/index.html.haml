@@ -1,0 +1,51 @@
+
+-# .header__title
+-#   = link_to "Seat_Veiw", root_path, class: "header__title--text"
+-# .header__right
+-#   - if user_signed_in?
+-#     = link_to "新規投稿", new_post_path, class: "header__right--btn"
+-#     = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
+-#   - else
+-#     = link_to "ログイン", new_user_session_path, class: "header__right--btn"
+-#     = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+
+-# .contents
+
+
+.top
+  .header
+    .header__flame
+      .header__flame__tittle
+        %p
+          SEET
+      .header__flame__login
+        - if user_signed_in?
+          = link_to "新規投稿", new_post_path, class: "header__right--btn"
+          = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn"
+        - else
+          = link_to "ログイン", new_user_session_path, class: "header__right--btn"
+          = link_to "新規登録", new_user_registration_path, class: "header__right--btn"
+  
+  .main
+    .main__flame
+      .main__flame__catch
+        %p.tittle
+          座席ビュー投稿サイト
+        %p.sub-tittle
+          座席の感想を写真とともに...
+      .main__flame__login
+        .flame__login__user-name
+        .flame__login__password
+        .flame__login__btn
+  
+  .footer
+    .footer__flame
+      .list
+        %p.twitter
+          twitter
+        %p.about
+          本サイト運営
+    .footer__copywrite
+      .text
+        %p
+          Copyright ©︎ 2020 yukito
