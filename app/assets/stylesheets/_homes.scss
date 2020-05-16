@@ -1,0 +1,75 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.top{
+  .header{
+    background-color:#800000;
+    width: 100%;
+    height: 100px;
+    &__flame{
+     padding:10px 10px;
+
+      &__tittle{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+   }
+
+      &__login{
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        display: flex;
+        color: white;  
+        padding: 0 60px;
+
+        .sign-in{
+          right: 20px;
+        }
+
+        
+    }
+  }
+ }
+  
+  .main{
+    background-image: url(homes.jpg);
+    width: 100%;
+    height: 1000px;
+    
+    &__flame{
+      padding: 103px 82px;
+
+      &__catch{
+        padding: 50;
+        .tittle{
+        color: white;
+        font-size: 80px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        .sub-tittle{
+        color: white;
+        font-size: 30px;
+        }
+        }
+      }
+    }
+
+  .footer{
+    background-color: #800000;
+    color: white ;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+
+    &__flame{
+      de
+      .list{
+      text-align: center;
+       
+      }
+
+    }
+    
+
+  }
+}
