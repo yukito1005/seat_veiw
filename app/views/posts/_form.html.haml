@@ -1,0 +1,10 @@
+
+= form_for @post do |f|
+  会場名#{f.text_field :stage}
+  %br/
+  座席#{f.number_field :seatnumber}
+  %br/
+  = f.fields_for :images do |i|
+    = i.file_field :src
+    %br/
+  = f.submit
